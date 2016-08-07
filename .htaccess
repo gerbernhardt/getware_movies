@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+ RewriteEngine On
+ RewriteBase /
+ RewriteRule ^images/logos/.(.*)$ $0 [L]
+ RewriteRule ^custom/.(.*)$ $0 [L]
+ RewriteRule (.*)$ /getware/$0 [L]
+</IfModule>
